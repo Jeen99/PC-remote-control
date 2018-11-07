@@ -1,0 +1,56 @@
+﻿body {
+	background-color: #6964a5;
+}
+
+#buttons {
+	margin: 0 auto; /* Эта конструкция выравнивает слой по центру, аналогична записи margin:0 auto 0 auto; */
+	width: 30%;
+    /*height: 30%;*/
+	border: #666666 3px solid; /*#182669 3px solid */ /*  рамка серого цвета */
+	line-height: 1.5; /* полуторный междустрочный интервал */
+	padding: 5px 10%; /* внутренний отступ по 5px сверху и снизу, 10px слева и справа */
+	background-color: #6979a5;  /*#6979a5*/ /* цвет фона (очень светлый) */
+}
+
+table {
+	margin: 0 auto; /* Эта конструкция выравнивает слой по центру, аналогична записи margin:0 auto 0 auto; */
+	border-color: black;
+}
+
+#touch {
+	margin: 25px auto;
+	width: 300px 50%;
+    height: 300px;
+	background-color: blue;
+}
+
+form {
+	margin-top: 1em;
+}
+
+button {
+ 	color:#fff;
+ 	display:block;
+ 	margin:0 auto;
+ 	border: 0;
+ 	width: 100px;
+ 	padding: 10px 1%;
+ 	margin-top: 30px;
+ 	background-color: #6496c8;
+	border-radius: 10px;
+	box-shadow: 0 5px #27496d
+ }
+
+button:hover {
+ 	background-color: #417cb8;
+ }
+
+button:active {
+ 	background-color: #417cb8;
+	box-shadow: 0 2px #27496d;
+	transform: translateY(5px);
+ }
+
+button:first-child{
+ 	margin-top:0px;
+ }
