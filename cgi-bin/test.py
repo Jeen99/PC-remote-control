@@ -1,0 +1,11 @@
+import win32api, win32con
+
+# VK_MEDIA_NEXT_TRACK = 176
+# VK_MEDIA_PLAY_PAUSE = 179
+# VK_MEDIA_PREV_TRACK = 177
+
+# VK_VOLUME_DOWN = 174
+# VK_VOLUME_MUTE = 173
+# VK_VOLUME_UP	 = 175
+
+win32api.keybd_event(win32con.VK_VOLUME_DOWN,0,0,0)

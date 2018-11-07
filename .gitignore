@@ -1,0 +1,8 @@
+#*.txt
+__pycache__
+design
+#!cgi-bin/
+#!*.py
+#!*.css
+#!*.html
+*test*
