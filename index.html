@@ -6,47 +6,51 @@
 		<title>Control Music</title>
 		<link rel="stylesheet" type="text/css" href="my_style.css">
 		<script type="text/javascript" src ="handler_button.js"> </script>
+		<script>document.write('<script src="http://' + (location.host || 'localhost').split(':')[0] + ':35729/livereload.js?snipver=1"></' + 'script>')</script>
 	</head>
 	<body onload="funct()">
-		<div id="buttons">
-			<table>
-				<tr>
-					<td colspan="1">
-						<button id="prev" onclick="test(this)"><<</button>
-					</td>
-					<td colspan="1">
-						<button id="play" onclick="test(this)">|></button>
-					</td>
-					<td colspan="1">
-						<button id="next" onclick="test(this)">>></button>
-					</td>
-				</tr>
-				<tr>
-					<td colspan="1">
-						<button id="down" onclick="test(this)">-</button>
-					</td>
-					<td colspan="1">
-						<button id="up" onclick="test(this)">+</button>
-					</td>
-					<td colspan="1">
-						<button id="mute" onclick="test(this)">Mute</button>
-					</td>
-				</tr>
-				<tr>
-					<td colspan="3">
-						<button id="shutdown" onclick="test(this)">Shutdown</button>
-						
-					</td>
-				</tr>
-			</table>
-            <div align="center">
-                <form action="/cgi-bin/control.py">
-                    <input type="text" name="par">
-                    <input type="submit">
-                </form>
-                <input id="input">
+		<div class="center-div">
+			<div id="content">
+				<table>
+					<tr>
+						<td>
+							<button id="prev" onclick="test(this)"><<</button>
+						</td>
+						<td>
+							<button id="play" onclick="test(this)">|></button>
+						</td>
+						<td>
+							<button id="next" onclick="test(this)">>></button>
+						</td>
+					</tr>
+					<tr>
+						<td>
+							<button id="down" onclick="test(this)">-</button>
+						</td>
+						<td>
+							<button id="up" onclick="test(this)">+</button>
+						</td>
+						<td>
+							<button id="mute" onclick="test(this)">Mute</button>
+						</td>
+					</tr>
+					<tr>
+						<td colspan="3">
+							<button id="shutdown" onclick="test(this)">Shutdown</button>
+						</td>
+					</tr>
+				</table>
+	            <div class="input">
+	                <form action="/cgi-bin/control.py">
+	                    <input type="text" name="par">
+	                    <input type="submit">
+	                </form>
+	                <input id="input">
+	            </div>
+	            <div id="touch"></div>
             </div>
+
 		</div>
-		<div id="touch"></div>
+		
 	</body>
 </html>		
