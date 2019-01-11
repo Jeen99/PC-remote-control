@@ -16,7 +16,10 @@ def main():
         arg = arg.replace(' ', '+')
         list.append(arg)
     s = '+'.join(list)
-    url = "http://www.google.com/search?q=%s" % s
+    #url = "http://www.google.com/search?q=%s" % s
+    s = s.replace('http://', '')
+    print("\n" + s)
+    url = "http://%s" % s
     webbrowser.open(url)
 
 if __name__ == '__main__':
